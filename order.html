@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER.habesha</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">HABESHA<span>.</span></a>
+            <ul class="menulink">
+                <span id="closebtn" class="menu">back</span>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+                
+            </ul>
+            <span id="menubtn" class="menu">Menu</span>
+        </nav>
+    </header>
+    <section class="front">
+        <div class="content">
+            <h1>Our Coffee</h1>
+        </div>
+    </section>
+    <section class="sections">
+        <div><img src="/image/Lets Meet for Coffee.jpg" class="coffee1"></div>
+<div><img src="/image/How to Make a Latte.jpg" class="coffee2"></div>
+<div><img src="/image/Holiday Spiced Café Au Lait - The Local Palate.jpg" class="coffee3"></div>
+<div> <img src="/image/Iced Mocha - Azuca.jpg" class="coffee4"></div>
+   </section>
+
+</body>
+<script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menubtn");
+    const closeBtn = document.querySelector("#closebtn");
+    
+    menuBtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        menuBtn.click();
+    });
+</script>
+</html>
