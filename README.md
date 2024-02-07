@@ -1,2 +1,2 @@
 # sign-up1
-https://Ruthyop.github.io/
+https://Ruthyop.github.io/sign-up/
